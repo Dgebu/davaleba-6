@@ -1,0 +1,332 @@
+.field {
+	width: 1200px;
+	margin:0 auto;
+	position: relative;
+}
+.background {
+	width: 100%;
+	position: absolute;
+}
+.rainbow {
+    height: 500px;
+    top: 35px;
+    left: 350px;
+    transform: rotate(95deg) scaleY(-1);
+    opacity: 0;
+    position: absolute;
+    animation: rainbow 10s infinite;
+}
+@keyframes rainbow {
+	50% {
+		opacity: 0.8;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+.sun {
+	width: 120px;
+	right: 180px;
+	top: 0px;
+	opacity: 0.7;
+	position: absolute;
+	animation: sun 30s infinite;
+}
+@keyframes sun {
+	to {
+		transform: rotate(1turn);
+	} 
+}
+.cloud {
+	width: 150px;
+	right:150px;
+	top: 0px;
+	position: absolute;
+	animation: cloud 50s infinite;
+}
+@keyframes cloud {
+	50% {
+		right: 0px;
+	}
+	100% {
+		right: 150px;
+	}
+}
+.cloud2 {
+    width: 140px;
+    right: 250px;
+    top: 5px;
+    transform: rotate(-5deg);
+    position: absolute;
+	animation: cloud2 50s infinite;
+}
+@keyframes cloud2 {
+	50% {
+		right: 500px;
+	}
+	100% {
+		right: 250px;
+	}
+}
+.clouds1 {
+    width: 80px;
+    right: 440px;
+    top: 405px;
+    transform: rotate(-10deg);
+    position: absolute;
+    animation: clouds1 90s infinite;
+}
+@keyframes clouds1 {
+	50% {
+		right: 700px;
+		top: 450px;
+	}
+	100% {
+		right: 490px;
+		top: 405px;
+	}
+}
+.clouds2 {
+    width: 60px;
+    right: 490px;
+    top: 430px;
+    transform: rotate(-20deg);
+    position: absolute;
+    animation: clouds2 90s infinite;
+}
+@keyframes clouds2 {
+	50% {
+		right: 700px;
+		top: 400px;
+	}
+	100% {
+		right: 490px;
+		top: 405px;
+	}
+}
+.apple {
+	width: 25px;
+    left: 290px;
+    top: 440px;
+    transform: rotate(-10deg);
+    position: absolute;
+    animation: apple-move 1s 1, apple-fall 1s 3s 1, apple-roll 2s 4s 1 forwards;
+}
+@keyframes apple-move {
+	50% {
+		transform: rotate(5deg);
+	}
+	100% {
+		transform: rotate(-5deg);
+	}
+}
+@keyframes apple-fall {
+	99% {
+		top: 710px;
+	}
+	100% {
+		top: 710px;
+		transform: rotate(-45deg);
+	}
+}
+@keyframes apple-roll {
+	0% {
+		top: 710px;
+		transform: rotate(-45deg);
+	}
+	100% {
+		top: 730px;
+		left: 310px;
+		transform: rotate(90deg);
+	}
+}
+.bird1 {
+	width: 40px;
+	position: absolute;
+}
+
+.flowers1 {
+	height: 270px;
+    top: 670px;
+    right: 290px;
+	position: absolute;
+	animation: flowers 3s linear infinite;
+}
+.flowers2 {
+	height: 200px;
+	top: 715px;
+	right: 70px;
+	transform: scaleX(-1);
+	position: absolute;
+	animation: flowers 3s linear infinite;
+}
+.flowers3 {
+    height: 270px;
+    top: 670px;
+    right: 170px;
+	transform: scaleX(-1);
+	position: absolute;
+	animation: flowers 3s linear infinite;
+}
+@keyframes flowers {
+	0% {
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: rotate(0.5deg);
+	}
+	100% {
+		transform: rotate(-0.5deg);
+	}
+}
+.bird1 {
+	width: 60px;
+	top: 550px;
+	right: 100px;
+	position: absolute;
+	animation: bird1 6s 1 forwards;
+}
+@keyframes bird1 {
+	100% {
+		top: 350px;
+		right: 1140px;
+		visibility: hidden;
+	}
+}
+.bird2 {
+	width: 50px;
+    top: 450px;
+    left: 600px;
+	position: absolute;
+	animation: bird2 15s linear infinite;
+}
+@keyframes bird2 {
+	0% {
+		top: 450px;
+		left: 600px;
+	}
+	50% {
+		left: 900px;
+		transform: rotateY(0deg);
+	}
+	51% {
+		top: 480px;
+		left: 900px;
+		transform: rotateY(180deg);
+	}
+	70% {
+		top: 440px;
+		transform: rotateY(180deg);
+	}
+	99% {
+		left: 600px;
+		transform: rotateY(180deg);
+	}
+	100% {
+		top: 450px;
+		left: 600px;
+		transform: rotateY(0deg);
+	}
+}
+.bee {
+	height: 30px;
+	top: 720px;
+	right: 450px;	
+	position: absolute;
+	animation: bee 10s linear infinite;
+}
+@keyframes bee {
+	0% {
+		top: 720px;
+		right: 450px;
+	}
+	50% {
+		right: 700px;
+		transform: rotateY(0deg);
+	}
+	51% {
+		height: 20px;
+		top: 730px;
+		right: 700px;
+		transform: rotateY(180deg);
+	}
+	70% {
+		top: 740px;
+		transform: rotateY(180deg);
+	}
+	99% {
+		top: 720px;
+		right: 450px;
+		transform: rotateY(180deg);
+	}
+	100% {
+		top: 720px;
+		right: 450px;
+		transform: rotateY(0deg);
+	}
+}
+.butterfly {
+	height: 30px;
+	top: 780px;
+	right: 250px;	
+	position: absolute;
+	animation: butterfly 10s linear infinite;
+}
+@keyframes butterfly {
+    from { -webkit-transform: rotate(0deg) translateX(40px) rotate(0deg); }
+    to   { -webkit-transform: rotate(360deg) translateX(40px) rotate(-360deg); }
+}
+.ladybug {
+	height: 30px;
+	top: 890px;
+	left: 240px;	
+	position: absolute;
+	animation: ladybug 30s 2s linear infinite;
+}
+@keyframes ladybug {
+	0% {
+		top: 890px;
+		left: 240px;
+		transform: rotate(0deg);
+	}
+	24% {
+		top: 830px;
+		left: 240px;
+		transform: rotate(0deg);
+	}
+	25% {
+		top: 830px;
+		left: 240px;
+		transform: rotate(-90deg);
+	}
+	49% {
+		top: 830px;
+		left: 80px;
+		transform: rotate(-90deg);
+	}
+	50% {
+		top: 830px;
+		left: 80px;
+		transform: rotate(-180deg);
+	}
+	74% {
+		top: 890px;
+		left: 80px;
+		transform: rotate(-180deg);
+	}
+	75% {
+		top: 890px;
+		left: 80px;
+		transform: rotate(-270deg);
+	}
+	99% {
+		top: 890px;
+		left: 240px;
+		transform: rotate(-270deg);
+	}
+	100% {
+		top: 890px;
+		left: 240px;
+		transform: rotate(-360deg);
+	}
+}
